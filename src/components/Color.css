@@ -1,0 +1,33 @@
+.color_square {
+    max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: grid;
+  gap: 1rem;  
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  }
+  
+  .item { 
+    margin-bottom: 0.5rem;
+    padding: 6rem;
+    color: white;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    border-radius: .2rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+    transition: all .2s;
+    height: 1rem;
+  }
+
+  @media (min-width: 600px) {
+    .color_square 
+        { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 900px) {
+    .color_square { grid-template-columns: repeat(3, 1fr); }
+  }
